@@ -8,29 +8,25 @@ All customizations in this fork are for my home-made CoreXY 3d Printer known as 
 ## Specs
 - CoreXY
 - Build Volume
-  - x:220
-  - y:180
-  - z:290
-- Ramps 1.4
-- [RepRapDiscount Full Graphic Smart Controller](https://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller)
-- V6 Hot End with BMG Extruder
+  - x:192
+  - y:189
+  - z:160
+- Sanguinololu
+- [RepRapDiscount Smart Controller](https://reprap.org/wiki/RepRapDiscount_Smart_Controller)
+- V8 Hot End
 - Stepper Drivers:
--   A: TMC2208 (standalone)
--   B: TMC2208 (standalone)
--   Z: A4988 <- will change
--   E: A4988 <- will change
+-   X: TMC2208 (standalone)
+-   Y: TMC2208 (standalone)
+-   Z: TMC2208 (standalone)
+-   E: TMC2208 (standalone)
 - Heated Bed
-- Auto Bed Levelling
 - Max Temps:
-  - Hot End: 250c
-  - Bed: 80c
+  - Hot End: 260c
+  - Bed: 100c
 - Compatible Materials:
   - PLA
+  - ABS
   - PETG
-
-## Notes
-- Any lines of code that are changed have been identified with a preceding `// BOB_CORE_XY` comment line
-- Most of the temps are limited because most of the components on the printer are printed in PLA and are still in prototype stage. When I can print the parts again in ABS or NYLON it should be able to withstand 275c on the hotend and 100c on the bed.
 
 ## Updating to the latest version Marlin 2
 

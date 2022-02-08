@@ -1323,9 +1323,11 @@
    * LED Control Menu
    * Add LED Control to the LCD menu
    */
-  //#define LED_CONTROL_MENU
+  // BOB_CORE_XY: Enable the LED Control Menu
+  #define LED_CONTROL_MENU
   #if ENABLED(LED_CONTROL_MENU)
-    #define LED_COLOR_PRESETS                 // Enable the Preset Color menu option
+    // BOB_CORE_XY: Disable the colour presets. Bob only has White LEDs
+    //#define LED_COLOR_PRESETS               // Enable the Preset Color menu option
     //#define NEO2_COLOR_PRESETS              // Enable a second NeoPixel Preset Color menu option
     #if ENABLED(LED_COLOR_PRESETS)
       #define LED_USER_PRESET_RED        255  // User defined RED value
@@ -1346,7 +1348,8 @@
   #endif
 
   // Insert a menu for preheating at the top level to allow for quick access
-  //#define PREHEAT_SHORTCUT_MENU_ITEM
+  // BOB_CORE_XY: Add the prehead shortcut to the main menu
+  #define PREHEAT_SHORTCUT_MENU_ITEM
 
 #endif // HAS_LCD_MENU
 
@@ -1942,7 +1945,8 @@
  *
  * Warning: Does not respect endstops!
  */
-//#define BABYSTEPPING
+// BOB_CORE_XY: Enable Babystepping
+#define BABYSTEPPING
 #if ENABLED(BABYSTEPPING)
   //#define INTEGRATED_BABYSTEPPING         // EXPERIMENTAL integration of babystepping into the Stepper ISR
   //#define BABYSTEP_WITHOUT_HOMING
@@ -1953,7 +1957,8 @@
   #define BABYSTEP_MULTIPLICATOR_Z  1       // (steps or mm) Steps or millimeter distance for each Z babystep
   #define BABYSTEP_MULTIPLICATOR_XY 1       // (steps or mm) Steps or millimeter distance for each XY babystep
 
-  //#define DOUBLECLICK_FOR_Z_BABYSTEPPING  // Double-click on the Status Screen for Z Babystepping.
+  // BOB_CORE_XY: Enable the shortcut to Babystepping by double-clicking the rotary encoder
+  #define DOUBLECLICK_FOR_Z_BABYSTEPPING  // Double-click on the Status Screen for Z Babystepping.
   #if ENABLED(DOUBLECLICK_FOR_Z_BABYSTEPPING)
     #define DOUBLECLICK_MAX_INTERVAL 1250   // Maximum interval between clicks, in milliseconds.
                                             // Note: Extra time may be added to mitigate controller latency.

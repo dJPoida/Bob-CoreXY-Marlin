@@ -1,3 +1,47 @@
+# Bob CoreXY Marlin Firmware
+This is a fork of the [Official Marlin Firmware](https://github.com/MarlinFirmware/Marlin).
+
+All customizations in this fork are for my home-made CoreXY 3d Printer known as "Bob (the printer)".
+
+`TODO: Insert Photos`
+
+## Specs
+- CoreXY
+- Ramps 1.4
+- Build Volume
+  - x:220
+  - y:180
+  - z:290
+- V6 Hot End with BMG Extruder
+- Heated Bed
+- Auto Bed Levelling
+- Max Temps:
+  - Hot End: 250c
+  - Bed: 80c
+- Compatible Materials:
+  - PLA
+  - PETG
+
+## Notes
+- Most of the temps are limited because most of the components on the printer are printed in PLA and are still in prototype stage. When I can print the parts again in ABS or NYLON it should be able to withstand 275c on the hotend and 100c on the bed.
+
+## Updating to the latest version Marlin 2
+
+1. Ensure the upstream repo has been set
+```
+git remote add upstream https://github.com/MarlinFirmware/Marlin.git
+```
+
+2. Fetch and merge the upstream repo
+```
+git fetch upstream
+git merge upstream/2.0.x
+```
+
+**Original README.md below**
+
+---
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
